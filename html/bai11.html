@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" id ="Name">
+        <input type="number" id = "Age">
+        <select name="gender" id = "gender">
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+
+        </select>
+        <input type="submit" value="Submit" onclick="event.preventDefault(); onclick()"> 
+
+    </form>
+    <div id = "result"></div>
+    <script>
+        function onclick(){
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var gender = document.getElementById('gender').value;
+
+            var result = document.getElementById('result');
+            result.innerHTML = 
+            '<p>Name: ' + name + '</p>'
+            + '<p>Age' + age + '</p>'
+            + '<p>Gender: ' + gender + '</p>';
+
+        }
+        </script>
+</body>
+</html>

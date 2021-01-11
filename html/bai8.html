@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My birthday</title>
+</head>
+<body>
+<script language = 'javascript' type = 'text/javascript'>
+   var ngaysinh = new Date(2021,0,13)
+   thu = ngaysinh.getDay();
+   switch(thu)
+   {
+      case 0: thongbao = "Chu nhat"; break ;
+      case 1: thongbao = "Thu Hai"; break ;
+      case 2: thongbao = "Thu ba"; break ;
+      case 3: thongbao = "Thu tu"; break ;
+      case 4: thongbao = "Thu nam"; break ;
+      case 5: thongbao = "thu sau"; break ;
+      default:thongbao = "thu bay"; 
+   }
+   document.write(" My birthday is "+thongbao);
+</script>
+    
+</body>
+</html>
